@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>HeartLink | Valentine Special</title>
+  <title>بسبوسة & دوما</title>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
@@ -315,7 +315,7 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
         <div style="min-width:0">
-          <h1>HeartLink — Valentine</h1>
+          <h1>بسبوسة & دوما</h1>
           <small>private love page</small>
         </div>
       </div>
@@ -327,7 +327,7 @@
         <section class="card active" id="page1" aria-label="Password Gate">
           <div class="card-inner">
             <div class="hero">
-              <h2><span class="gradtxt">عيد الحب</span> 🩷</h2>
+              <h2><span class="gradtxt">بسبوسة & دوما</span> 🩷</h2>
               <p>جاهزه يروحي 💕</p>
             </div>
 
@@ -457,7 +457,10 @@
 
   <script>
     const PASSWORD = "14/10/2024";
-    const STORY_START = new Date(2024, 9, 14, 14, 2, 5); 
+    
+    // حساب التاريخ بأثر رجعي: سنة، 3 شهور، 19 يوم، 14 ساعة، 2 دقيقة، 5 ثواني
+    const now = new Date();
+    const STORY_START = new Date(now.getFullYear() - 1, now.getMonth() - 3, now.getDate() - 19, now.getHours() - 14, now.getMinutes() - 2, now.getSeconds() - 5);
 
     const page1 = document.getElementById("page1");
     const page2 = document.getElementById("page2");
